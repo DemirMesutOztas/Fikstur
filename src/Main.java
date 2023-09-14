@@ -11,15 +11,9 @@ public class Main {
         String takimName;
         int takimid;
         Fikstur f1 = new Fikstur();
-        HashMap<String,String> fikstur = new HashMap<>();
-
-
 
         System.out.println("Kaç takım gireceksiniz");
         takimsayisi = scan.nextInt();
-
-
-
 
         System.out.println("Takımları giriniz");
         for(int i=0;i<takimsayisi;i++)
@@ -27,16 +21,11 @@ public class Main {
             System.out.println("Takım ismi");
             takimName=scan.next();
             takimid=i;
-            f1.takimList.put(takimid,takimName);
             f1.takim.add(takimName);
-
-
         }
 
         if(takimsayisi%2!=0)
         {
-
-            f1.takimList.put(takimsayisi,"Bay");
             f1.takim.add("Bay");
             takimsayisi++;
         }
@@ -101,9 +90,6 @@ public class Main {
             }
         }
 
-
-
     }
-
 
 }
